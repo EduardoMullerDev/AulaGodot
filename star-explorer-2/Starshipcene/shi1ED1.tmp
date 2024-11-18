@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtghjncmb6bpq"]
+
+[ext_resource type="Texture2D" uid="uid://dug5c38j7d442" path="res://assets/PNG_Parts&Spriter_Animation/Ship6/Ship6.png" id="1_bkbr6"]
+[ext_resource type="Script" path="res://Starshipcene/star_ship_image.gd" id="2_k3y4s"]
+[ext_resource type="Texture2D" uid="uid://bfd4ompm74a4a" path="res://assets/PNG_Parts&Spriter_Animation/Ship6/Exhaust/Normal_flight/Exhaust1/exhaust1.png" id="3_c6a8y"]
+[ext_resource type="Script" path="res://Starshipcene/exhast_player_ship_sprite.gd" id="4_qtyry"]
+
+[node name="ship" type="Node2D"]
+position = Vector2(-5, -2)
+
+[node name="StarShipImage" type="Sprite2D" parent="."]
+position = Vector2(102, 96)
+texture = ExtResource("1_bkbr6")
+script = ExtResource("2_k3y4s")
+
+[node name="ExhastPlayerShipSprite" type="Sprite2D" parent="StarShipImage"]
+position = Vector2(-71, 0)
+texture = ExtResource("3_c6a8y")
+script = ExtResource("4_qtyry")
